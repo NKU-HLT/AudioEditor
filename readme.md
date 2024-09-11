@@ -82,10 +82,6 @@ python main.py  --prompt "A woman is giving a speech amid applause" \
 <head>
     <meta charset="UTF-8">
     <style>
-        table {
-            width: 100%;
-            margin: 0 auto;
-        }
         td, th {
         text-align: center;
     }
@@ -93,7 +89,7 @@ python main.py  --prompt "A woman is giving a speech amid applause" \
 </head>
 
 <body>
-    <table border="1">
+    <table border="1" style="width: 100%;margin: 0 auto;">
         <caption><strong>Objective Evaluation Results</strong></caption>
         <thead>
             <tr>
