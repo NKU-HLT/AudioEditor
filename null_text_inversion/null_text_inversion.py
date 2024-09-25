@@ -134,7 +134,7 @@ class NullInversion:
         for i in range(NUM_DDIM_STEPS):
             uncond_embeddings = uncond_embeddings.clone().detach()
             uncond_embeddings.requires_grad = True
-            optimizer = Adam([uncond_embeddings], lr=1e-3 * (1. - i / 1000.))
+            optimizer = Adam([uncond_embeddings], lr=1e-4 * (1. - i / 1000.))
             latent_prev = latents[len(latents) - i - 2]
             t = self.model.scheduler.timesteps[i]
             with torch.no_grad():
